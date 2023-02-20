@@ -1,3 +1,4 @@
+<html>
 <h1>{{title}}</h1>
 <div *ngFor="let todo of toDoList">
   <div *ngIf="todo.completed === false">
@@ -8,3 +9,4 @@
 <br>
 <input #newItem (keyup.enter)="addTask(newItem.value); newItem.value = ''"/>
 <button (click)="addTask(newItem.value)">Add Task</button>
+</html>
